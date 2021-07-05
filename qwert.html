@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta charset="utf-8">
+  <style>
+    html,
+    body {
+      height: 100%;
+      overflow:hidden;
+    }
+
+    body {
+      width: 100%;
+      overflow:hidden;
+    }
+  </style>
+</head>
+<body>
+<pdf-viewer id="viewer"></pdf-viewer>
+<script src="https://unpkg.com/pdfobject@2.2.5/pdfobject.min.js"></script>
+<script>
+var options = {
+    pdfOpenParams: {
+      view: 'FitV', 
+      scrollbar: '1', 
+      toolbar: '0', 
+      statusbar: '1', 
+      messages: '0', 
+      navpanes: '1' 
+    }
+};
+PDFObject.embed("./pdf.pdf", false, options);
+</script>
+
+</body>
+</html>
