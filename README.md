@@ -1,2 +1,3 @@
-# morphykuffour.github.io
-Resume.
+# morphykuffour.github.io/resume
+
+[Resume](morphykuffour.github.io/resume)

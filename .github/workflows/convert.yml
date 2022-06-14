@@ -10,3 +10,4 @@ jobs:
           root_file: resume.tex
         env:
           TEXINPUTS: "/shading.sty"
+          ".:./github//:"
