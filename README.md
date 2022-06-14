@@ -1,3 +1,3 @@
-# morphykuffour.github.io/resume
+### Resume
 
 [Resume] ("https://morphykuffour.github.io/resume/")
