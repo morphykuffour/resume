@@ -1,0 +1,171 @@
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.35in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItemCustom}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Morphy Kuffour}} & \href{mailto:}{morphy.kuffour@uconn.edu}\\
+  \href{https://www.linkedin.com/in/morphy-kuffour-4279bb174/}{LinkedIn} & 860-573-6681 \\
+  %\href{https://github.com/xprilion}{Github: ~~github.com/xprilion} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{~~Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Connecticut}{Storrs, CT, USA}
+      {B.S.E, Computer Science and Engineering and B.A, Applied Mathematics;  GPA: 3.70}{Aug 2019 - Present}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Relevant Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Machine Learning, Networking, Databases}}}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Programs \& Clubs:}
+  UConn Honors Program, UConn Upsilon Pi Epsilon, Louis Stokes Alliance for Minority Participation (LSAMP), National Society for Black Engineers (NSBE), UConn Cybersecurity Club, UConn Honors Society}}}
+    \resumeSubHeadingListEnd
+	    
+\vspace{5pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{~~~~~~Lua, Nix, Python, Bash, awk, C, SQL, Powershell}
+	\resumeSubItem{Tools}{~~~~~~~~~~~~~~Neovim, Emacs, Docker, Vagrant, Excel, Git, SQLite}
+	\resumeSubItem{Platforms}{~~~~~~~Linux, NixOS, OSX, Web, Windows XP/7/10/11, Windows Server 2016}
+	\resumeSubItem{Soft Skills}{~~~~~~~Leadership, Effective Verbal and Written Communication Skills, Time Management}
+\resumeSubHeadingListEnd
+
+\vspace{5pt}
+\section{Relevant Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Raytheon Technologies}{Remote}
+    {Digital Leadership Development Program Intern}{Aug 2021 - Present}
+    \resumeItemListStart
+    \resumeItemCustom{}{Working with Raytheon Technologies Corporate Identity Access Solutions team to facilitate Multi-Factor Authentication (MFA) solutions for over 30,000 employees.}
+    \resumeItemListEnd
+    
+\vspace{2pt}
+    \resumeSubheading{Teaching Assistant}{Storrs, CT}
+    {Undergraduate Teaching Assistant for CSE 3140}{Jan. 2022 - Present}
+    \resumeItemListStart
+    \resumeItemCustom{}{Assist students in CSE 3140, a cybersecurity lab course, and provide office hours to answer student questions regarding coursework. Skills: Python, Debugging, Cybersecurity}
+    \resumeItemListEnd
+    
+\vspace{2pt}
+    \resumeSubheading{Teaching Assistant}{Storrs, CT}
+    {Undergraduate Teaching Assistant for CSE 1010}{Aug. 2021 - Jan 2022}
+    \resumeItemListStart
+    \resumeItemCustom{}{Assist students in CSE 1010, an introductory computer science course taught in Python and MATLAB, and provide office hours to answer student questions regarding course work.}
+    \resumeItemListEnd
+    
+\vspace{2pt}
+    \resumeSubheading
+		{UConn Information Technology Services}{Storrs, CT}
+		{UITS Network Assistant}{ Jan. 2021 - Jun. 2021}
+		\resumeItemListStart
+        \resumeItemCustom{}{Duties included troubleshooting network hardware related problems, remotely configuring routers and access points, conducting wireless surveys, and working with Cisco Prime Infrastructure software to manage subnets on the UConn Campus.}
+		\resumeItemListEnd
+		
+\vspace{2pt}
+    \resumeSubheading
+    {UConn Office of Residential Life}{Storrs, CT}
+    {Service Desk Assistant}{Aug. 2020 - Jan 2021}
+    \resumeItemListStart
+    \resumeItemCustom{}{Duties include using proprietary software to check students in and out of housing assignments, distributing, and collecting room keys, and providing customer service to UConn students and the public regarding housing procedures.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{5pt}
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{Cross Platform Nix Configuration}{System-wide configuration for Linux, Windows Subsystem for Linux(WSL), and Mac OS X.  Tech: Nix, NixOS, Bash, OSX, WSL}
+\vspace{2pt}
+\resumeSubItem{lookup.nvim}{ (Work in progress) Lookup up the definition of a word under the cursor in neovim, a terminal text editor. Tech: Neovim, Lua, Rest APIs}
+\vspace{2pt}
+\resumeSubItem{rawtalk}{ (Work in progress) A userspace tool that leverages hidapi library to communicate with a qmk enabled keyboard to perform layout switching and other useful tasks. Tech: Rust, C}
+\vspace{2pt}
+\resumeSubItem{Dactyl Manuform 5x6 Keyboard Build}{Built a custom Dactyl Manuform Keyboard, a parameterized, split-hand, concave, columnar, ergonomic keyboard. Skills: Wiring, PCB Soldering, Hardware debugging. Tech: C}
+\vspace{2pt}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+
+\vspace{5pt}
+\section{Interests}
+Playing soccer, basketball, and working out. Building and modifying custom mechanical keyboards. Writing nix to create a reproducible, custom, cross-platform system for NixOS(Linux), MacOSX(Darwin) and Windows (WSL). Improving my productivity, learning new programming techniques and languages. I also enjoy writing about the technology I use on my blog: \href{https://morphykuffour.github.io/}{morphykuffour.github.io}. \\
+\end{document}
