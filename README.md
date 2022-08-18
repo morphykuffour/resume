@@ -1,2 +1,0 @@
-# morphykuffour.github.io
-Resume.
