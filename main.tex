@@ -16,6 +16,7 @@
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
+\usepackage{amssymb}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -71,7 +72,9 @@
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
 
-\renewcommand{\labelitemii}{$\circ$}
+%\renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\bullet$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -91,39 +94,57 @@
   \href{mailto:morpkuff@protonmail.com}{morpkuff@protonmail.com}  & \href{https://morphykuffour.github.io/}{Personal Blog}\\
    860-573-6681\\
 \end{tabular*}
+
 %-----------PROFESSIONAL SUMMARY-----------------
-\\
-\vspace{5pt}
+%\\
+\vspace{-13pt}
 %Motivated and growth-oriented professional seeking to expand my technical expertise, develop versatile skills, and build meaningful %industry relationships—while delivering impactful solutions and contributing to organizational success.
 
 %Versatile and growth-driven technology professional with a strong foundation in software development, infrastructure, and product management. Experienced in delivering solutions across cross-functional teams and driving operational improvements through automation and innovation. Committed to continuous learning, building impactful systems, and growing into a leadership role within the tech industry.
 
-Versatile and growth-oriented technology professional with experience in software development, infrastructure, and Product management. Focused on building impactful solutions and evolving toward technical leadership.
+%Versatile and growth-oriented technology professional with experience in software development, infrastructure, and Product management. Focused on building impactful solutions and evolving toward technical leadership.
+
+\section{}
+Linux-focused technology professional with hands-on experience in cloud engineering, MLOps, and infrastructure automation. Proven track record of optimizing systems performance and streamlining development workflows. Passionate about cybersecurity with strong foundations in networking and systems administration. Seeking to leverage technical expertise toward a role in cloud security or systems reliability engineering.
 
 
 %-----------EDUCATION-----------------
 \section{Education}
+%\vspace{5pt}
+%  \resumeSubHeadingListStart
+%    \resumeSubheading
+%      {University of Connecticut}{Storrs, CT, USA}
+%      {B.S.E, Computer Science and Engineering}{Aug 2019 - May 2023}
+%      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Relevant Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Machine Learning, Networking, Databases}}}
+%      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Programs \& Clubs:}
+%  UConn Honors Program, UConn Upsilon Pi Epsilon, Louis Stokes Alliance for Minority Participation (LSAMP), National Society for Black Engineers (NSBE), UConn Cybersecurity Club, UConn Honors Society}}}
+%    \resumeSubHeadingListEnd
+
 \vspace{5pt}
-  \resumeSubHeadingListStart
+  \begin{itemize}[leftmargin=0pt, label={}]  % Remove bullets and left margin
     \resumeSubheading
       {University of Connecticut}{Storrs, CT, USA}
       {B.S.E, Computer Science and Engineering}{Aug 2019 - May 2023}
+      \vspace{5pt}
       {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Relevant Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Machine Learning, Networking, Databases}}}
       {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Programs \& Clubs:}
   UConn Honors Program, UConn Upsilon Pi Epsilon, Louis Stokes Alliance for Minority Participation (LSAMP), National Society for Black Engineers (NSBE), UConn Cybersecurity Club, UConn Honors Society}}}
-    \resumeSubHeadingListEnd
-	    
+  \end{itemize}
+  
 \section{Skills Summary}
 \vspace{1pt}
 	\resumeSubHeadingListStart
-	\resumeSubItem{Languages}{~~~~~~Lua, Nix, Python, Bash, awk, C, Powershell}
-	\resumeSubItem{Tools}{~~~~~~~~~~~~~~Neovim, Emacs, Docker, Vagrant, Git, SQL, Excel (data analysis)}
-	\resumeSubItem{Platforms}{~~~~~~~Linux, NixOS, OSX, Web, Windows XP/7/10/11, Windows Server 2016}
-	\resumeSubItem{Certifications}{~~CompTIA Security+ (In Progress), RHCSA (In Progress), RHCE (In Progress)}
-	\resumeSubItem{Soft Skills}{~~~~~~~Leadership, Effective Verbal and Written Communication Skills, Time Management}
+	\resumeSubItem{Systems \& Infrastructure}{Linux, Nixos, Docker, Vagrant}
+	\resumeSubItem{Programming}{~~~~~~~~~~~~~~~~~~Python, Bash, Lua, Nix, C, PowerShell, awk}
+	\resumeSubItem{Cloud \& DevOps}{~~~~~~~~~~~~~Azure, ETL, CI/CD Pipelines}
+	\resumeSubItem{Tools}{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Git, Neovim, Emacs, SQL}
+	\resumeSubItem{Certifications}{~~~~~~~~~~~~~~~~~~~CompTIA Security+ (In Progress), RHCSA (In Progress), RHCE (In Progress)}
+        \resumeSubItem{Cybersecurity}{~~~~~~~~~~~~~~~~~~Netowrk Traffic Analysis, Log Analysis, Open Source Intelligence, Access Management}
+	%\resumeSubItem{Soft Skills}{~~~~~~~Leadership, Effective Verbal and Written Communication Skills, Time Management}
 \resumeSubHeadingListEnd
 
-\vspace{1pt}
+\vspace{-17pt}
+%-----------RELEVANT EXPERIENCE-----------------
 \section{Relevant Experience}
 \vspace{5pt}
   \resumeSubHeadingListStart
@@ -133,7 +154,8 @@ Versatile and growth-oriented technology professional with experience in softwar
 
     \vspace{4pt}
     \item\small{\textbf{Cloud Data Engineer (Current Rotation):} Developing enterprise-scale AI solutions for manufacturing}
-    \begin{itemize}[leftmargin=*]
+    %\begin{itemize}[leftmargin=*]
+    \begin{itemize}[leftmargin=*, label=$\circ$]
       \item\small{Implemented MLOps pipeline: Reduced model deployment time by 40\% through performance optimization and automated CI/CD workflows}
       \item\small{Optimized data processing: Built Azure-based ETL pipeline that replaced a manual process, reducing processing time by 65\%}
       \item\small{Enhanced cross-team collaboration: Created standardized ML model deployment documentation}
@@ -141,7 +163,7 @@ Versatile and growth-oriented technology professional with experience in softwar
     
     \vspace{4pt}
     \item\small{\textbf{Technical Product Manager (Rotation 2):} Led legacy application modernization initiative}
-    \begin{itemize}[leftmargin=*]
+    \begin{itemize}[leftmargin=*, label=$\circ$]
       \item\small{Accelerated migration timeline: Built a Lotus Notes MVP using the Mendix platform}
       \item\small{Increased collaboration : Improved cross functional communication by utilizing Agile methodologies}
       \item\small{Automated reporting: Created data pipeline that saved 15+ hours of manual work weekly}
@@ -149,7 +171,7 @@ Versatile and growth-oriented technology professional with experience in softwar
     
     \vspace{4pt}
     \item\small{\textbf{Software Developer (Rotation 1):} Developed compliance automation solutions}
-    \begin{itemize}[leftmargin=*]
+    \begin{itemize}[leftmargin=*, label=$\circ$]
       \item\small{Streamlined document classification: Built PowerShell solution for SharePoint metadata management}
       \item\small{Enhanced data governance: Integrated Term Store taxonomy reducing manual classification errors by 25\%}
     \end{itemize}
@@ -158,8 +180,11 @@ Versatile and growth-oriented technology professional with experience in softwar
 \vspace{2pt}
     \resumeSubheading{Raytheon Technologies}{Remote}
     {Digital Leadership Development Program Intern}{Aug 2021 - May 2023}
+    
+    Supported enterprise-wide identity management initiatives focused on improving security posture and user experience. Collaborated with cross-functional teams to implement MFA solutions at scale.
+    \vspace{-3pt}
     \resumeItemListStart
-    \resumeItemCustom{}{Worked with Raytheon Technologies Corporate Identity Access Solutions team to facilitate Multi-Factor Authentication (MFA) solutions for over 30,000 employees.}
+    \resumeItemCustom{}{Part of the RTX Corporate Identity Access Solutions team that facilitated Multi-Factor Authentication (MFA) solutions for over 30,000 employees.}
     \resumeItemCustom{}{Created documentation on Single Sign On(SSO) process.}
     \resumeItemListEnd
     
@@ -208,24 +233,38 @@ Versatile and growth-oriented technology professional with experience in softwar
         \resumeItemCustom{}{Competed against 39 Engineering teams to achieve this recognition.}
 		\resumeItemListEnd
 
-
-
-
+%-----------PROJECTS-----------------
+%\vspace{5pt}
+%\section{Projects}
+%\vspace{5pt}
+%\resumeSubHeadingListStart
+%\resumeSubItem{\texbf{Cross Platform Nix Configuration}}{Developed reproducible system configuration to solve inconsistency problems across multiple platforms. Built modular Nix configuration that works seamlessly across Linux, WSL, and OSX, reducing environment setup time from days to under an hour. \\Repository: \href{https://github.com/morphykuffour/nix.git}{github.com/morphykuffour/nix}}
+%\vspace{2pt}
+%\resumeSubItem{\href{https://github.com/morphykuffour/lookup.nvim.git}{lookup.nvim}}{Lookup up the definition of a word under the cursor in neovim, a terminal text editor. Tech: Neovim, Lua, Rest APIs}
+%\vspace{2pt}
+%\resumeSubItem{\href{https://github.com/morphykuffour/rawtalk.git}{rawtalk}}{ (Work in progress) A userspace tool that leverages hidapi library to communicate with a qmk enabled keyboard to perform layout switching and other useful tasks. Tech: Rust, nix}
+%\vspace{2pt}
+%\resumeSubItem{\href{https://morphykuffour.github.io/keyboards,/ergonomics,/qmk/2021/12/29/Dactyl-Manuform.html}{Dactyl Manuform 5x6 Keyboard Build}}{Built a custom Dactyl Manuform Keyboard, a parameterized, split-hand, concave, columnar, ergonomic keyboard. Skills: Wiring, PCB Soldering, Hardware debugging. Tech: C}
+%\vspace{2pt}
+%\resumeSubHeadingListEnd
+%
+%\vspace{5pt}
 
 %-----------PROJECTS-----------------
-\vspace{5pt}
 \section{Projects}
 \vspace{5pt}
-\resumeSubHeadingListStart
-\resumeSubItem{\href{https://github.com/morphykuffour/nix.git}{Cross Platform Nix Configuration}}{System-wide configuration for Linux, Windows Subsystem for Linux(WSL), and Mac OS X.  Tech: Nix, NixOS, Bash, OSX, WSL}
+\begin{itemize}[leftmargin=0pt, label={}]  % Remove bullets and left margin
+\resumeSubItem{\textbf{Cross Platform Nix Configuration}}{Developed reproducible system configuration to solve inconsistency problems across multiple platforms. Built modular Nix configuration that works seamlessly across Linux, WSL, and OSX, reducing environment setup time from days to under an hour. \\Repository: \href{https://github.com/morphykuffour/nix.git}{github.com/morphykuffour/nix}}
 \vspace{2pt}
-\resumeSubItem{\href{https://github.com/morphykuffour/lookup.nvim.git}{lookup.nvim}}{Lookup up the definition of a word under the cursor in neovim, a terminal text editor. Tech: Neovim, Lua, Rest APIs}
+
+\resumeSubItem{\texbf{lookup.nvim}}{Created a Neovim plugin to solve the workflow disruption of looking up word definitions. Implemented an API-based solution that displays definitions directly in the editor without context switching. \\Repository: \href{https://github.com/morphykuffour/lookup.nvim}{github.com/morphykuffour/lookup.nvim}}
 \vspace{2pt}
-\resumeSubItem{\href{https://github.com/morphykuffour/rawtalk.git}{rawtalk}}{ (Work in progress) A userspace tool that leverages hidapi library to communicate with a qmk enabled keyboard to perform layout switching and other useful tasks. Tech: Rust, nix}
+
+\resumeSubItem{\textbf{rawtalk}}{Addressing the limitations of keyboard customization software, rawtalk is a userspace tool for direct communication with QMK keyboards. Leveraged the hidapi library to enable layout switching and custom macros without leaving the terminal. Currently in beta with core functionality working. Tech: Rust, Nix, C \\Repository: \href{https://github.com/morphykuffour/rawtalk.git}{github.com/morphykuffour/rawtalk}}
 \vspace{2pt}
-\resumeSubItem{\href{https://morphykuffour.github.io/keyboards,/ergonomics,/qmk/2021/12/29/Dactyl-Manuform.html}{Dactyl Manuform 5x6 Keyboard Build}}{Built a custom Dactyl Manuform Keyboard, a parameterized, split-hand, concave, columnar, ergonomic keyboard. Skills: Wiring, PCB Soldering, Hardware debugging. Tech: C}
+
+\resumeSubItem{\textbf{Dactyl Manuform 5x6 Keyboard Build}}{Tackled ergonomic issues of standard keyboards by building a custom split keyboard. Designed and assembled a parameterized, concave, columnar keyboard with custom firmware, reducing wrist strain and increasing typing comfort. Documented the entire process on my blog to help others with similar builds. Tech: C, QMK, Hardware Design \\Blog Post: \href{https://morphykuffour.github.io/keyboards,/ergonomics,/qmk/2021/12/29/Dactyl-Manuform.html}{Dactyl Manuform 5x6 Build Log}}
 \vspace{2pt}
-\resumeSubHeadingListEnd
 
 
 %-- \vspace{-5pt}
