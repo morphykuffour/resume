@@ -1,6 +1,7 @@
 name: Compile Resume
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'main.tex'
