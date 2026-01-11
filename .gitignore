@@ -1,0 +1,33 @@
+# LaTeX auxiliary files
+main*
+!main.tex
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor backup/swap files
+*~
+*.swp
+*.swo
+*.bak
+.*.swp
+
+# Environment and secrets
+.env
+.env.*
+*.pem
+*.key
+
+# IDE files
+.idea/
+.vscode/
+*.code-workspace
